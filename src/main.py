@@ -62,7 +62,6 @@ def validate_arguments(args: argparse.Namespace) -> bool:
                   "(начинающийся с http:// или https://).")
             is_valid = False
 
-    # Используем константу вместо магического числа 50 (Исправление М1)
     if len(args.filter) > MAX_FILTER_LEN:
         print(f"Ошибка: Подстрока фильтрации слишком длинная "
               f"(максимум {MAX_FILTER_LEN} символов).")
